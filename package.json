@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "install": "npm install -g pnpm@8.3.1 && pnpm install",
     "start": "concurrently -n w: npm:start:*",
     "start:update": "ts-node -P tsconfig.back.json ./back/update.ts",
     "start:public": "ts-node -P tsconfig.back.json ./back/public.ts",
